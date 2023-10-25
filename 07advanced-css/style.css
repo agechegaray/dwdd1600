@@ -1,0 +1,326 @@
+/* prevent problems with different browsers */
+* {box-sizing: border-box;}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.56rem;
+}
+ 
+/* header */
+header {
+    background-color: #ffffff;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+
+header div {
+    padding-left: 1vw;
+}
+
+header h1 {
+    margin: 0;
+    color: #6cace4;
+}
+
+header p {
+    margin: 0;
+    padding-top: .7rem;
+    padding-left: .7rem;
+    color: #6cace4;
+    letter-spacing: 1px;
+}
+
+/* navigation */
+
+
+/* big screens */
+@media only screen and (min-width: 601px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        background-color: #ffb81c;
+        padding: 1rem 2rem;
+        border-top: #6cace4 2px solid;
+        border-bottom: #6cace4 2px solid;
+    }
+    
+    nav li {
+        list-style-type: none;
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+    
+    nav a {
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        padding: 1.125rem 1rem;
+    }
+    
+    nav a:hover {
+        background-color: #6cace4;
+        color: #000; 
+        padding-top: .9rem;
+        padding-bottom: 1rem;
+    
+    }
+    
+    nav li.active a {
+        background-color: #6cace4;
+        color: #000;
+        padding-top: .9rem;
+        padding-bottom: 1rem;
+    }
+} /* end of the media query */
+
+
+/* small screens */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: none;
+        text-align: center;
+        border-bottom: solid 2px #6cace4;
+    }
+    nav li.active a  {
+        background-color: #7d4016;
+    }
+    
+    nav .active a {
+        background-image: linear-gradient(to bottom, #ffe09c, #ffb81c);
+        color: black;
+    }
+}
+ /* end of the media query */
+/* main */
+main {
+    padding: 1rem 3vw;
+}
+
+main h1 {
+    color: #6cace4;
+}
+
+main h2 {
+    margin: 3rem 1rem 0 1rem; 
+    color: #7d4016;
+    
+}
+
+main p {
+    color: #000000;
+    margin: 0;
+    padding: .625rem .625rem 0 .625rem;
+    text-indent: 2.5rem;  
+}
+
+main ol {
+    padding: 1rem 2vw;
+    background-color: #ffffff;
+}
+
+main dl dt {
+    color: #7d4016;
+    font-weight: 700;
+    padding: 1rem .65rem .65rem .65rem;
+}
+
+main dl dd {
+    color: #000000;
+    font-size: .9rem;
+}
+
+main a {
+    color: #6cace4;
+}
+
+main a:hover {
+    color: rgb(255,184,28);
+}
+
+.facts_lists {
+    list-style: square;
+    margin-left: .938rem;
+}
+
+main address {  
+    margin: 2rem auto 1rem auto;
+    padding: 1rem;
+    text-align: center;
+    font-style: italic;
+    width: 13rem;
+    border: 1px solid #6cace4;
+    border-radius: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* footer */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    padding: 1rem 0;
+    font-size: .8rem;
+    clear: both;
+}
+
+footer a {
+    color: #6cace4;
+}
+
+/* width control */
+header, nav, main, footer {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* GEOGRAPHY PAGE */
+
+.climate_list {
+    list-style: circle;
+    margin-left: 3rem;
+}
+
+.geo_regions {
+    margin: 0 4rem;
+}
+
+/* THANKS PAGE */
+
+.body_thanks {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_thanks {
+    margin-top: auto;
+}
+
+/* Images */
+
+figure.arg_flag {
+    width: 30%;
+    margin: 0 0 0 1%;
+    float: right;
+}
+
+figure.arg_flag img{
+    width: 100%;
+    height: auto;
+}
+
+figure.arg_flag figcaption {
+    text-align: center;
+    font-size: .8rem
+}
+
+figure.hero {
+    width: 50%;
+    margin: auto;
+}
+
+figure.hero img {
+    width: 100%;
+    height: auto;
+}
+
+div.places_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div.places_gallery img {
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div.places_gallery img:hover {
+    box-shadow: 10px 10px 30px black;
+}
+
+div.places_gallery figure {
+    margin: 1rem 2% 0 0;
+}
+
+div.places_gallery figcaption {
+    text-align: center;
+    font-size: .9rem;
+    color: #7d4016;
+    background-color: #6cace4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Form */
+
+.myForm fieldset {
+    border: 1px solid #ffb81c;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #ffb81c;
+    font-size: 1.3rem;
+}
+
+.myForm label {
+    margin: .6rem;
+
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    border: solid 1px #7d7d7d;
+    padding: .4rem;
+    width: 250px;
+    border-radius: .4rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 300;
+}
+
+.myForm input[type=radio], .myForm input[type=checkbox] {
+    margin-right: 7px;
+}
+
+.myForm textarea {
+    height: 6rem;
+    width: 550px;
+    margin: .3rem;
+}
+
+.myForm :required {
+    background-color: #add0f0;
+}
+
+.myForm [type=submit] {
+    background-color: #ffb81c;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    margin: 1rem 0 0 1vw;
+}

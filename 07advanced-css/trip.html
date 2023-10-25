@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="/images/favicon1.ico">
+    <title>Argentina: Home</title>
+    <meta name="viewport" content="width=device-width, initial-scalp-1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn about Argentina" />
+    <meta name="author" content="Agustina Echegaray">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Oxygen:wght@300;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!--start of the page header-->
+    <header>
+        <img src="images/logo.png" alt="site logo" width="73" height="100">
+        <div>
+            <h1>Argentina</h1>
+            <p class="under_header">Explore This Marvelous Country</p>
+        </div>
+    </header>
+
+    <!--start of the page navigation-->
+    <nav>
+        <ul class="active">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="geography.html">Geography</a></li>
+            <li><a href="places_to_visit.html">Places To Visit</a></li>
+            <li class="active"><a href="trip.html">Win A Free Trip</a></li>
+        </ul>
+    </nav>
+
+    <!--start of the page content-->
+    <main>
+        <h1>Enter to Win a Free Trip to Argentina</h1>
+
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+                <label>Email*<input type="email" name="email" required placeholder="example@example.com"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>2024 Travel Dates</legend>
+                    <label><input type="radio" name="method" value="summer">January-March (summer)</label>
+                    <label><input type="radio" name="method" value="fall">April-June (fall)</label>
+                    <label><input type="radio" name="method" value="winter">July-September (winter)</label>
+                    <label><input type="radio" name="method" value="spring">October-December (spring)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Places to Visit</legend>
+                    <label><input type="checkbox" name="bariloche" value="chosen">Bariloche</label>
+                    <label><input type="checkbox" name="buenos aires" value="chosen">Buenos Aires</label>
+                    <label><input type="checkbox" name="casa rosada" value="chosen">Casa Rosada</label>
+                    <label><input type="checkbox" name="cordoba" value="chosen">Córdoba</label>
+                    <label><input type="checkbox" name="iguacu falls" value="chosen">Iguaçu Falls</label>
+                    <label><input type="checkbox" name="mar del plata" value="chosen">Mar del Plata</label>
+                    <label><input type="checkbox" name="perito moreno glacier" value="chosen">Perito Moreno Glacier</label>
+                    <label><input type="checkbox" name="ushuaia" value="chosen">Ushuaia</label>
+
+                    <label>Preferred International Airport Destination
+                        <select name="destination">
+                            <option value="none">Please Select</option>
+                            <option value="san carlos">San Carlos de Bariloche Airport (Bariloche)</option>
+                            <option value="ezeiza">Ezeiza Ministro Pistarini International Airport (Buenos Aires)</option>
+                            <option value="ingeniero">Ingeniero Aeronáutico Ambrosio L.V. Taravella International Airport (Córdoba)</option>
+                            <option value="astor">Astor Piazzolla International Airport (Mar del Plata)</option>
+                            <option value="malvinas">Malvinas Argentinas International Airport (Ushuaia)</option>
+                        </select>
+                    </label>
+            </fieldset>
+
+            <label>Comments
+                <textarea name="comments"></textarea>
+            </label>
+
+            <input type="submit" value="Send Form">
+        </form>
+    </main>
+
+    <!--start of the page footer-->
+    <footer>
+        <p>&copy; 2023 &bull; Agustina Echegaray &bull;
+            <a href="mailto:10908906@uvu.edu">Email Us</a>
+        </p>
+    </footer>
+</body>
+
+</html>
