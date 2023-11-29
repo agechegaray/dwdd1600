@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Budget Vacations</title>
+    <meta name="viewport" content="width=device-width, initial-scalp-1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Budget Vacations" />
+    <meta name="author" content="Agustina Echegaray">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Oxygen:wght@300;700&display=swap"
+        rel="stylesheet">
+    
+   
+
+
+</head>
+
+<body>
+    <!--start of the page header-->
+    <header>
+        <img src="images/logo.png" alt="site logo" width="100" height="99">
+        <div>
+            <h1>Budget Vacations</h1>
+            <p class="under_header">Go on Your Dream Vacation</p>
+        </div>
+    </header>
+
+    <!--start of the page navigation-->
+    <nav>
+        <ul class="explore">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="planning.html">Planning</a></li>
+            <li><a href="packages.html">Travel Packages</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--start of the page content-->
+    <main class="contact_us">
+        <h1>Contact Us</h1>
+
+        <h2>Fill out the form so that we can find the best deal for your travels.</h2>
+
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+                <label>Email*<input type="email" name="email" required placeholder="example@example.com"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>2024 Travel Dates</legend>
+                    <label><input type="radio" name="method" value="cold">January-March</label>
+                    <label><input type="radio" name="method" value="hot">April-June</label>
+                    <label><input type="radio" name="method" value="warm">July-September </label>
+                    <label><input type="radio" name="method" value="cool">October-December </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Places to Visit</legend>
+                    <label><input type="checkbox" name="bora bora" value="chosen">Bora Bora</label>
+                    <label><input type="checkbox" name="barcelona" value="chosen">Barcelona</label>
+                    <label><input type="checkbox" name="california" value="chosen">California</label>
+                    <label><input type="checkbox" name="cancun" value="chosen">Cancun</label>
+                    <label><input type="checkbox" name="costa rica" value="chosen">Costa Rica</label>
+                    <label><input type="checkbox" name="honolulu" value="chosen">Honolulu</label>
+                    <label><input type="checkbox" name="london" value="chosen">London</label>
+                    <label><input type="checkbox" name="maldives" value="chosen">Maldives</label>
+                    <label><input type="checkbox" name="new york city" value="chosen">New York City</label>
+                    <label><input type="checkbox" name="paris" value="chosen">Paris</label>
+                    <label><input type="checkbox" name="rome" value="chosen">Rome</label>
+                    <label><input type="checkbox" name="tokyo" value="chosen">Tokyo</label>
+
+
+                    <label>Preferred Airline
+                        <select name="destination">
+                            <option value="none">Please Select</option>
+                            <option value="aeromexico">Aeromexico</option>
+                            <option value="air france">Air France</option>
+                            <option value="american airlines">American Airlines</option>
+                            <option value="british airways">British Airways</option>
+                            <option value="delta">Delta</option>
+                            <option value="frontier">Frontier</option>
+                            <option value="hawaiian airlines">Hawaiian Airlines</option>
+                            <option value="jetblue">Jetblue</option>
+                            <option value="united">United</option>
+                        </select>
+                    </label>
+            </fieldset>
+
+            <label>Comments
+                <textarea name="comments"></textarea>
+            </label>
+
+            <input type="submit" value="Send Form">
+        </form>
+    </main>
+
+    <!--start of the page footer-->
+    <footer>
+        <p>&copy; 2023 &bull; Agustina Echegaray &bull;
+            <a href="mailto:10908906@uvu.edu">Email Us</a>
+        </p>
+    </footer>
+</body>
+
+</html>
